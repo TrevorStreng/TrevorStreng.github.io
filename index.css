@@ -1,6 +1,9 @@
 :root {
     --color-primary: rgb(162, 154, 147);
     --color-secondary: rgb(255, 255, 255);
+    --color-primary-dark: rgb(98, 92, 88);
+    --color-secondary-dark: rgb(116, 114, 112);
+    --bg-color: rgb(148, 153, 149);
 }
 
 * {
@@ -13,8 +16,12 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: rgb(54, 54, 59);
-    background-color: rgb(148, 153, 149);
+    background-color: var(--bg-color);
     height: 100%;
+}
+
+.dark {
+    background-color: var(--color-primary-dark);
 }
 
 .header {
@@ -70,6 +77,31 @@ body {
 
 }
 
-.content {
-    padding: 1rem;
+#toggle-btn {
+    padding: 0.5em;
+    font-weight: 800;
+}
+  
+#toggle-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+  
+.dark-mode-toggle {
+    background: #000;
+    color: #fff;
+}
+  
+#theme {
+    width: 100vw;
+    height: 100vh;
+}
+  
+.dark-mode-theme {
+    background: #000;
+    color: #fff;
+}
+
+.tButton {
+    padding-right: 5em;
 }
